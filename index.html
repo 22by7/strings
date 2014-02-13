@@ -38,7 +38,7 @@
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
 		onload="if(submitted){document.getElementById('successMessage').style.display='block';}" frameborder="0"></iframe>
 		<form action="https://docs.google.com/forms/d/1-11zgbjmtbujyzGXxdAR4QqssBmm_2TUPhOOdgbGiPQ/formResponse" method="post" id="signup" target="hidden_iframe" onsubmit="submitted=true;">
-			<input type="email" class="textInput" id="email" name="entry.1064473216" placeholder="Your e-mail address" autocomplete="off" title="john_doe@email.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>
+			<input type="email" class="textInput" id="email" name="entry.1064473216" placeholder="Your e-mail address" autocomplete="off" title="john_doe@email.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required/>
 			<button class="btn" type="submit">Request an invite</button>
 		</form>
 		<div id="successMessage" style="display:none">
