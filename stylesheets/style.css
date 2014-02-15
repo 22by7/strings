@@ -51,6 +51,9 @@ header{
 	font-weight: 300;
 	font-size: medium;
 }
+#comingSoon span{
+	text-transform: none;
+}
 .textInput{
 	font-size: 18px;
 	width: 220px;	
