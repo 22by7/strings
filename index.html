@@ -17,8 +17,24 @@
 	
 	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="javascript/js-webshim/minified/extras/modernizr-custom.js"></script>
+	<script src="javascript/js-webshim/minified/polyfiller.js"></script>
+
+	<script>
+	(function () {
+		$.webshims.setOptions('forms', {
+			lazyCustomMessages: true,
+			iVal: {
+				handleBubble: 'hide',
+				fx: 'slide',
+				sel: '.ws-validate',
+				fieldWrappper: ':not(span, label, em, strong, b, i, mark, p)'
+			}
+		});
+		$.webshims.polyfill('forms');
+	})();
+	</script>
 	
 
 	<!-- TO DO: Add Google Analytics-->
@@ -40,9 +56,13 @@
 		<script type="text/javascript">var submitted=false;</script>
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
 		onload="if(submitted){document.getElementById('successMessage').style.display='block';}" frameborder="0"></iframe>
-		<form action="https://docs.google.com/forms/d/1-11zgbjmtbujyzGXxdAR4QqssBmm_2TUPhOOdgbGiPQ/formResponse" method="post" id="signup" target="hidden_iframe" onsubmit="submitted=true;">
-			<input type="email" class="textInput" id="email" name="entry.1064473216" placeholder="Your e-mail address" autocomplete="off" title="john_doe@email.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required/>
+		<form action="https://docs.google.com/forms/d/1-11zgbjmtbujyzGXxdAR4QqssBmm_2TUPhOOdgbGiPQ/formResponse" method="post" id="signup" target="hidden_iframe" onsubmit="submitted=true;" class="betaForm ws-validate">
+		<div>
+			<input type="email" class="textInput" id="email" name="entry.1064473216" placeholder="Your e-mail address" autocomplete="off" required="required"/>
+		</div>
+		<div>
 			<button class="btn" type="submit">Request an invite</button>
+		</div>
 		</form>
 		<div id="successMessage" style="display:none">
 			You've been added to the list.

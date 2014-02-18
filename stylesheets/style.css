@@ -67,7 +67,8 @@ header{
 }
 
 .btn{		
-	background-color: #3fb8e9;		
+	background-color: #3fb8e9;	
+	margin-top: 10px;	
 	margin-left: 5px;
 	padding: 0;
 	position: relative;
