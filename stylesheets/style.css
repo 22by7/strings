@@ -68,8 +68,7 @@ header{
 
 .btn{		
 	background-color: #3fb8e9;	
-	margin-top: 10px;	
-	margin-left: 5px;
+	margin-left: 10px;
 	padding: 0;
 	position: relative;
 	width: 180px;
@@ -106,4 +105,7 @@ footer{
 #socialmedia img{
 	width: 1.7em;
 
+}
+form{
+	display: inline-block;
 }
