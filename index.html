@@ -24,14 +24,9 @@
 	<script>
 	(function () {
 		$.webshims.setOptions('forms', {
-			lazyCustomMessages: true,
-			iVal: {
-				handleBubble: 'hide',
-				fx: 'slide',
-				sel: '.ws-validate',
-				fieldWrappper: ':not(span, label, em, strong, b, i, mark, p)'
-			}
+			customMessages: true,			
 		});
+		
 		$.webshims.polyfill('forms');
 	})();
 	</script>
@@ -45,7 +40,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-48317809-1', '22by7.co');
-  ga('send', 'pageview');
+  ga('send', 'pageview');gid
 
 </script>
 </head>
