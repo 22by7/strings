@@ -44,8 +44,8 @@ header{
 }
 
 #comingSoon{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	color: rgba(255,255,255,0.6);
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -87,10 +87,14 @@ header{
 }
 
 #socialmedia{
-	margin: 50px auto;
+	margin: 40px auto;
 	display: block;
 
 }
+#betaSignup{
+	height: 93px;
+}
+
 a{
 	text-decoration: none !important;
 
@@ -108,4 +112,15 @@ footer{
 }
 form{
 	display: inline-block;
+}
+.error, .success {
+	display: block;
+	font-size: 0.7em;
+	padding: 10px;
+	margin: 0 auto;
+	color: rgba(235, 42, 42, 0.85);
+}
+
+.success {
+	color: rgba(132, 255, 132, 0.85)
 }
